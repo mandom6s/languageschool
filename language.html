@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>language school — Языковая школа</title>
+<meta name="description" content="Albus Academy — английский для детей, взрослых и бизнеса. Запишитесь на бесплатный пробный урок.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="#top" class="logo">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+        <circle cx="15" cy="15" r="8.5" fill="url(#sunGrad)"/>
+        <path d="M3 17.5C3 17.5 9 13 15 13C21 13 27 17.5 27 17.5" stroke="#1E4FD6" stroke-width="2.4" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="sunGrad" x1="6.5" y1="6.5" x2="23.5" y2="23.5" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF9C84"/>
+            <stop offset="1" stop-color="#DD4B30"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span class="logo__word">Language School<span>языковая школа</span></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Основная навигация">
+      <a href="#directions">Курсы</a>
+      <a href="#teachers">Преподаватели</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#signup">Блог</a>
+    </nav>
+
+    <div class="nav__right">
+      <a href="#signup" class="btn btn--blue btn--sm nav__cta-desktop">Записаться</a>
+      <button class="nav__burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__mobile-panel" id="mobilePanel">
+    <a href="#directions">Курсы</a>
+    <a href="#teachers">Преподаватели</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#signup">Блог</a>
+    <a href="#signup" class="btn btn--coral" style="margin-top:8px;">Записаться на пробный урок</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <svg class="hero__art" viewBox="0 0 600 600" aria-hidden="true">
+  <defs>
+    <radialGradient id="heroGlowOuter" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFD9C9" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#FFD9C9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heroGlowBlue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#CFE0FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#CFE0FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heroSun" cx="0.35" cy="0.32" r="0.75">
+      <stop offset="0%" stop-color="#FFF6EE"/>
+      <stop offset="30%" stop-color="#FFC9A8"/>
+      <stop offset="60%" stop-color="#FF6B52"/>
+      <stop offset="100%" stop-color="#1E4FD6"/>
+    </radialGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C9D8F7"/>
+      <stop offset="100%" stop-color="#E2E9FA"/>
+    </linearGradient>
+    <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9FB6EE"/>
+      <stop offset="100%" stop-color="#C9D8F7"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="110" cy="380" r="150" fill="url(#heroGlowBlue)"/>
+
+  <g class="glow">
+    <circle cx="430" cy="200" r="210" fill="url(#heroGlowOuter)"/>
+    <circle cx="430" cy="200" r="155" fill="none" stroke="#FF9C84" stroke-width="1" opacity="0.15"/>
+    <circle cx="430" cy="200" r="135" fill="none" stroke="#FF9C84" stroke-width="1" opacity="0.25"/>
+    <circle cx="430" cy="200" r="98" fill="url(#heroSun)"/>
+  </g>
+
+  <path d="M-20 505C60 472 140 494 220 478C300 462 380 484 460 468C540 452 600 472 620 462V620H-20V505Z" fill="url(#hillFar)" opacity="0.38"/>
+  <path d="M-20 545C75 508 155 532 235 515C320 497 400 522 480 504C550 489 600 510 620 498V620H-20V545Z" fill="url(#hillNear)" opacity="0.55"/>
+
+  <circle cx="170" cy="130" r="4" fill="#1E4FD6" opacity="0.4"/>
+  <circle cx="545" cy="110" r="5" fill="#FF6B52" opacity="0.32"/>
+  <circle cx="95" cy="245" r="3.5" fill="#1E4FD6" opacity="0.4"/>
+  <circle cx="260" cy="80" r="3" fill="#1E4FD6" opacity="0.3"/>
+  <circle cx="600" cy="210" r="3.5" fill="#FF6B52" opacity="0.28"/>
+</svg>
+
+    <div class="container">
+      <div class="hero__inner">
+        <p class="eyebrow">
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.4" fill="#FF6B52"/><path d="M2 11C2 11 5 8.6 8 8.6C11 8.6 14 11 14 11" stroke="#1E4FD6" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Новый день для вашего английского
+        </p>
+        <h1>Языковой барьер — <em>это прошлое</em></h1>
+        <p class="hero__subhead">Albus Academy — это английский, на котором действительно хочется говорить: для детей, взрослых и бизнеса. Без зубрёжки, без зажатости — с преподавателями, которые сами через это прошли.</p>
+
+        <div class="hero__actions">
+          <a href="#signup" class="btn btn--coral">Записаться на пробный урок</a>
+          <a href="#directions" class="btn btn--ghost">Посмотреть программы</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat-chip"><b>1 200+</b><span>учеников заговорили</span></div>
+          <div class="stat-chip"><b>4.9 ★</b><span>средняя оценка</span></div>
+          <div class="stat-chip"><b>37</b><span>преподавателей</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 1180 64" preserveAspectRatio="none">
+      <path d="M0 8C220 56 420 56 590 30C760 4 960 4 1180 40V64H0V8Z" fill="#EFF3FC"/>
+    </svg>
+  </div>
+
+  <!-- ============ DIRECTIONS ============ -->
+  <section class="directions" id="directions">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.4" fill="#FF6B52"/><path d="M2 11C2 11 5 8.6 8 8.6C11 8.6 14 11 14 11" stroke="#1E4FD6" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Форматы обучения
+        </p>
+        <h2>Наши направления</h2>
+        <p>Подберём программу под вашу цель и определим уровень на бесплатном пробном уроке.</p>
+      </div>
+
+      <div class="directions__grid">
+        <article class="direction-card" data-reveal>
+          <div class="direction-card__icon">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M13 3L16.5 9.5L23.5 10.5L18.5 15.5L19.7 22.5L13 19L6.3 22.5L7.5 15.5L2.5 10.5L9.5 9.5L13 3Z" fill="#DD4B30"/></svg>
+          </div>
+          <h3>Детям 5–12</h3>
+          <p>Учим через игру и истории — ребёнок незаметно начинает думать на английском, а не переводить слово за словом.</p>
+          <a href="#signup">Программа для детей <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="direction-card" data-reveal>
+          <div class="direction-card__icon">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M13 2C7 2 2 7 2 13C2 19 7 24 13 24C19 24 24 19 24 13C24 7 19 2 13 2Z" stroke="#1E4FD6" stroke-width="2"/><path d="M2 13H24M13 2C16 5 17.5 9 17.5 13C17.5 17 16 21 13 24M13 2C10 5 8.5 9 8.5 13C8.5 17 10 21 13 24" stroke="#1E4FD6" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Взрослым</h3>
+          <p>Разговорный английский для путешествий, переезда и уверенного общения — без страха ошибиться.</p>
+          <a href="#signup">Программа для взрослых <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="direction-card" data-reveal>
+          <div class="direction-card__icon">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="3" y="9" width="20" height="13" rx="2.5" stroke="#1E4FD6" stroke-width="2"/><path d="M9 9V6.5C9 5.7 9.7 5 10.5 5H15.5C16.3 5 17 5.7 17 6.5V9" stroke="#1E4FD6" stroke-width="2"/></svg>
+          </div>
+          <h3>Бизнесу</h3>
+          <p>Деловая переписка, переговоры и презентации — английский, на котором заключают сделки.</p>
+          <a href="#signup">Бизнес-английский <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEACHERS ============ -->
+  <section class="teachers" id="teachers">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.4" fill="#FF6B52"/><path d="M2 11C2 11 5 8.6 8 8.6C11 8.6 14 11 14 11" stroke="#1E4FD6" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Команда
+        </p>
+        <h2>Преподаватели, которые горят своим делом</h2>
+        <p>CELTA, IELTS-сертификаты и сотни выпускников — но говорят они с вами по-человечески, а не по методичке.</p>
+      </div>
+
+      <div class="teachers__grid">
+        <div class="teacher-card" data-reveal>
+          <div class="avatar-blob" style="background:linear-gradient(135deg,#1E4FD6,#3E6EF0);">АК</div>
+          <h3>Анна Ким</h3>
+          <p class="role">Английский для детей</p>
+          <span class="badge">10 лет опыта</span>
+        </div>
+        <div class="teacher-card" data-reveal>
+          <div class="avatar-blob" style="background:linear-gradient(135deg,#DD4B30,#FF8A6B);">ДС</div>
+          <h3>Дамир Сапаров</h3>
+          <p class="role">Бизнес-английский</p>
+          <span class="badge">MBA · ex-PwC</span>
+        </div>
+        <div class="teacher-card" data-reveal>
+          <div class="avatar-blob" style="background:linear-gradient(135deg,#13348F,#1E4FD6);">ЭБ</div>
+          <h3>Эмили Бартон</h3>
+          <p class="role">Носитель языка (UK)</p>
+          <span class="badge">CELTA</span>
+        </div>
+        <div class="teacher-card" data-reveal>
+          <div class="avatar-blob" style="background:linear-gradient(135deg,#FF6B52,#DD4B30);">ЖА</div>
+          <h3>Жанна Ахметова</h3>
+          <p class="role">IELTS · разговорный</p>
+          <span class="badge">IELTS 8.5</span>
+        </div>
+        <div class="teacher-card" data-reveal>
+          <div class="avatar-blob" style="background:linear-gradient(135deg,#3E6EF0,#1E4FD6);">КН</div>
+          <h3>Карим Нурлан</h3>
+          <p class="role">Английский для взрослых</p>
+          <span class="badge">7 лет опыта</span>
+        </div>
+        <div class="teacher-card" data-reveal>
+          <div class="avatar-blob" style="background:linear-gradient(135deg,#FF8A6B,#FF6B52);">СЛ</div>
+          <h3>София Ли</h3>
+          <p class="role">Подростковые группы</p>
+          <span class="badge">TKT certified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.4" fill="#FF6B52"/><path d="M2 11C2 11 5 8.6 8 8.6C11 8.6 14 11 14 11" stroke="#1E4FD6" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Отзывы
+        </p>
+        <h2>Что говорят ученики</h2>
+      </div>
+
+      <div class="reviews__grid">
+        <article class="review-card review-card--quote" data-reveal>
+          <div class="stars">★★★★★</div>
+          <p class="quote">Сын за полгода начал сам смотреть видео на английском без перевода — для нас это маленькое чудо.</p>
+          <div class="review-card__author">
+            <div class="author-dot" style="background:#1E4FD6;">АЖ</div>
+            <div><b>Алия Жумабаева</b><span>мама ученика, 9 лет</span></div>
+          </div>
+        </article>
+
+        <article class="review-card" data-reveal>
+          <div class="video-thumb">
+            <div class="play-btn"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M5 3L14 9L5 15V3Z" fill="#1E4FD6"/></svg></div>
+            <span class="duration-chip">1:42</span>
+          </div>
+          <div class="video-caption"><b>Тимур Болатов</b><span>видео-отзыв · подготовка к IELTS</span></div>
+        </article>
+
+        <article class="review-card review-card--quote" data-reveal>
+          <div class="stars">★★★★★</div>
+          <p class="quote">После курса деловой переписки перестал бояться созвонов с партнёрами из Дубая.</p>
+          <div class="review-card__author">
+            <div class="author-dot" style="background:#DD4B30;">ОТ</div>
+            <div><b>Олег Третьяков</b><span>руководитель отдела продаж</span></div>
+          </div>
+        </article>
+
+        <article class="review-card" data-reveal>
+          <div class="video-thumb">
+            <div class="play-btn"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M5 3L14 9L5 15V3Z" fill="#1E4FD6"/></svg></div>
+            <span class="duration-chip">2:05</span>
+          </div>
+          <div class="video-caption"><b>Карина Ержанова</b><span>видео-отзыв · Business English</span></div>
+        </article>
+
+        <article class="review-card review-card--quote" data-reveal>
+          <div class="stars">★★★★★</div>
+          <p class="quote">Дочка ждёт уроки английского больше, чем мультики — это многое говорит о преподавателях.</p>
+          <div class="review-card__author">
+            <div class="author-dot" style="background:#13348F;">НА</div>
+            <div><b>Назгуль Абенова</b><span>родитель ученицы</span></div>
+          </div>
+        </article>
+
+        <article class="review-card review-card--quote" data-reveal>
+          <div class="stars">★★★★★</div>
+          <p class="quote">Прошёл с нулевого уровня до уверенных собеседований на английском за год регулярных занятий.</p>
+          <div class="review-card__author">
+            <div class="author-dot" style="background:#FF6B52;">МК</div>
+            <div><b>Максат Каримов</b><span>ученик, взрослая группа</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true" style="background:var(--sky);">
+    <svg viewBox="0 0 1180 64" preserveAspectRatio="none">
+      <path d="M0 40C220 4 420 4 590 30C760 56 960 56 1180 8V64H0V40Z" fill="#14203A"/>
+    </svg>
+  </div>
+
+  <!-- ============ SIGNUP ============ -->
+  <section class="signup" id="signup">
+    <div class="container signup__inner">
+      <div class="signup__text" data-reveal>
+        <p class="eyebrow">
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.4" fill="#FF9C84"/><path d="M2 11C2 11 5 8.6 8 8.6C11 8.6 14 11 14 11" stroke="#9DB6F7" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Бесплатный пробный урок
+        </p>
+        <h2>Запишитесь — и сами всё поймёте уже на первом уроке</h2>
+        <p class="lead">30 минут онлайн или в нашем центре. Определим уровень, подберём преподавателя и программу — без обязательств покупать курс.</p>
+        <ul class="trust-list">
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#FF6B52" stroke-width="1.6"/><path d="M6 10.5L8.5 13L14 7" stroke="#FF6B52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Бесплатно, без обязательств</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#FF6B52" stroke-width="1.6"/><path d="M6 10.5L8.5 13L14 7" stroke="#FF6B52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Определим уровень за один урок</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#FF6B52" stroke-width="1.6"/><path d="M6 10.5L8.5 13L14 7" stroke="#FF6B52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Подберём преподавателя под вашу цель</li>
+        </ul>
+      </div>
+
+      <div class="form-card" data-reveal>
+        <form id="signupForm">
+          <h3>Записаться на урок</h3>
+          <p class="form-sub">Мы свяжемся с вами в течение часа в рабочее время.</p>
+
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" placeholder="Как вас зовут?" required>
+          </div>
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="direction">Направление</label>
+              <select id="direction" name="direction">
+                <option>Ребёнку</option>
+                <option>Себе</option>
+                <option>Команде</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="time">Удобное время</label>
+              <select id="time" name="time">
+                <option>Утро</option>
+                <option>День</option>
+                <option>Вечер</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--coral btn--block">Записаться на пробный урок</button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#FFE7E0"/><path d="M15 24.5L21 30.5L33 17.5" stroke="#DD4B30" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Заявка отправлена!</h3>
+          <p>Мы свяжемся с вами в течение часа и подберём удобное время для пробного урока.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="logo">
+          <svg width="28" height="28" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+            <circle cx="15" cy="15" r="8.5" fill="url(#sunGrad2)"/>
+            <path d="M3 17.5C3 17.5 9 13 15 13C21 13 27 17.5 27 17.5" stroke="#1E4FD6" stroke-width="2.4" stroke-linecap="round"/>
+            <defs><linearGradient id="sunGrad2" x1="6.5" y1="6.5" x2="23.5" y2="23.5" gradientUnits="userSpaceOnUse"><stop stop-color="#FF9C84"/><stop offset="1" stop-color="#DD4B30"/></linearGradient></defs>
+          </svg>
+          <span class="logo__word"> Language School</span>
+        </a>
+        <p>Языковая школа для детей, взрослых и бизнеса. Учим говорить, а не бояться.</p>
+        <div class="footer__socials">
+          <a class="social-dot" href="#" aria-label="Telegram"><svg width="17" height="17" viewBox="0 0 20 20" fill="none"><path d="M3 10.5L16 4L13 17L9 13.5L6.5 16L6 11.5L3 10.5Z" stroke="#1E4FD6" stroke-width="1.4" stroke-linejoin="round"/></svg></a>
+          <a class="social-dot" href="#" aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 20 20" fill="none"><path d="M4 17L5.2 13.2C4.3 11.9 3.8 10.4 3.8 8.8C3.8 4.6 7.4 1.2 11.6 1.2C15.8 1.2 19.2 4.6 19.2 8.8C19.2 13 15.8 16.4 11.6 16.4C10.1 16.4 8.7 16 7.5 15.2L4 17Z" stroke="#1E4FD6" stroke-width="1.3" transform="translate(-2 1)"/></svg></a>
+          <a class="social-dot" href="#" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 20 20" fill="none"><rect x="2.5" y="2.5" width="15" height="15" rx="4" stroke="#1E4FD6" stroke-width="1.4"/><circle cx="10" cy="10" r="3.4" stroke="#1E4FD6" stroke-width="1.4"/><circle cx="14.3" cy="5.7" r="1" fill="#1E4FD6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#directions">Курсы</a></li>
+          <li><a href="#teachers">Преподаватели</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#signup">Блог</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Направления</h4>
+        <ul>
+          <li><a href="#directions">Детям</a></li>
+          <li><a href="#directions">Взрослым</a></li>
+          <li><a href="#directions">Бизнесу</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+77000000000">+7 700 000 00 00</a></li>
+          <li><a href="mailto:hello@lexiora.kz">hello@LanguageSchool.kz</a></li>
+          <li><a href="#">Казахстан, Астана</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026  Language School. Все права защищены.</span>
+      <div class="legal">
+        <a href="#">Конфиденциальность</a>
+        <a href="#">Условия</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
